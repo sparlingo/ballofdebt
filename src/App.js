@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react'
+import '../node_modules/react-vis/dist/style.css'
+import '../node_modules/bulma/css/bulma.min.css'
+import {Button} from '../node_modules/react-bulma-components'
+  
+class App extends Component {
+  render() {
+    return (
+      <section className="theTop">
+        <div className="container">
+          <Button color="primary">Blah Blah</Button>
+        </div>
+      </section>
+    )
+  }
 }
 
-export default App;
+export default App
